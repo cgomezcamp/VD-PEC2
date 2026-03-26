@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEC2 — Visualización de Datos</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; padding: 40px 20px; }
+    .container { max-width: 860px; margin: 0 auto; }
+    h1 { font-size: 26px; font-weight: 600; margin-bottom: 8px; color: #1a1a1a; }
+    .subtitle { font-size: 15px; color: #666; margin-bottom: 40px; }
+    .card {
+      background: white; border-radius: 10px; padding: 28px 32px;
+      margin-bottom: 24px; border: 1px solid #e0e0e0;
+    }
+    .badge {
+      display: inline-block; font-size: 11px; font-weight: 600;
+      padding: 3px 10px; border-radius: 20px; margin-bottom: 12px;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .badge-i   { background: #dbeafe; color: #1d4ed8; }
+    .badge-ii  { background: #dcfce7; color: #166534; }
+    .badge-iii { background: #fef9c3; color: #854d0e; }
+    h2 { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+    p  { font-size: 14px; color: #555; line-height: 1.6; margin-bottom: 18px; }
+    a.btn {
+      display: inline-block; padding: 10px 22px;
+      background: #1d4ed8; color: white; border-radius: 6px;
+      text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: background 0.2s;
+    }
+    a.btn:hover { background: #1e40af; }
+    .meta { font-size: 12px; color: #999; margin-top: 10px; }
+    footer { text-align: center; font-size: 12px; color: #aaa; margin-top: 48px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>PEC2 — Visualización de Datos</h1>
+  <p class="subtitle">Tres técnicas de visualización · Datos abiertos · Python + Plotly</p>
+
+  <div class="card">
+    <span class="badge badge-i">Grupo I — Básica y popular</span>
+    <h2>Treemap</h2>
+    <p>Medallero de los Juegos Olímpicos París 2024. Muestra los Top 25 países ordenados por total de medallas, con un subnivel que desglosa cada país en sus medallas de oro, plata y bronce. El área de cada rectángulo es proporcional al número de medallas y el color indica el tipo.</p>
+    <a class="btn" href="treemap.html">Ver visualización →</a>
+    <p class="meta">Fuente: Kaggle — Paris 2024 Olympics Medals dataset (olympics2024.csv)</p>
+  </div>
+
+  <div class="card">
+    <span class="badge badge-ii">Grupo II — Habitual y específica</span>
+    <h2>Slope Chart</h2>
+    <p>Evolución del Índice de Desarrollo Humano (IDH) en 29 países europeos entre 2000 y 2023. La pendiente de cada línea muestra la dirección e intensidad del cambio. Se destacan los países con mayor mejora (Albania, Bulgaria) y los de mayor IDH (Islandia, Noruega).</p>
+    <a class="btn" href="slope_chart.html">Ver visualización →</a>
+    <p class="meta">Fuente: PNUD — Human Development Report 2025 · HDR25 Statistical Annex Table 2</p>
+  </div>
+
+  <div class="card">
+    <span class="badge badge-iii">Grupo III — Menos habitual</span>
+    <h2>Connected Scatterplot</h2>
+    <p>Trayectoria de España entre 1950 y 2022 mostrando la relación entre PIB per cápita y esperanza de vida. Los puntos se conectan en orden cronológico revelando eventos históricos clave: el boom económico de los 60–70, la crisis de 2008 y el impacto del COVID-19 en 2020.</p>
+    <a class="btn" href="connected_scatterplot.html">Ver visualización →</a>
+    <p class="meta">Fuente: Our World in Data — Life expectancy vs. GDP per capita · ourworldindata.org</p>
+  </div>
+
+  <footer>PEC2 · Visualización de Datos · UOC</footer>
+</div>
+</body>
+</html>
